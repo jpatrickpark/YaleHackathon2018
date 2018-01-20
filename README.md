@@ -115,10 +115,10 @@ After training you can evaluate the saved model on the test set by invoking the 
 python hackathon_example.py evaluate --input_file=butterfly_mini_dataset/test/test.csv  --export_dir=my_trained_model
 ```
 
-#### Using the model using the trained model
+#### Using our pre-trained model:
 
-If you are just looking to run an already trained model you can invoke the command 
+If you are just looking to use an already trained model you can invoke the following command 
 ```
 python hackathon_example.py evaluate --input_file=butterfly_mini_dataset/test/test.csv  --export_dir=trained_model
 ```
-This will essentialy load a model we have already trained so you can for example focus on feature visualization.
+This will load a model we have already trained so you can focus instead on using the output of the model for another task.
