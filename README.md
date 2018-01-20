@@ -107,10 +107,18 @@ python hackathon_example.py download_dataset
 To train the model you can invoke the following command for example:
 
 ```
-python hackathon_example.py train --input_file=butterfly_mini_dataset/training/training.csv  --export_dir=models --number_of_epochs=4
+python hackathon_example.py train --input_file=butterfly_mini_dataset/training/training.csv  --export_dir=my_trained_model --number_of_epochs=4
 ```
 
 After training you can evaluate the saved model on the test set by invoking the following command for example:
 ```
-python hackathon_example.py evaluate --input_file=butterfly_mini_dataset/test/test.csv  --export_dir=models
+python hackathon_example.py evaluate --input_file=butterfly_mini_dataset/test/test.csv  --export_dir=my_trained_model
 ```
+
+#### Using the model using the trained model
+
+If you are just looking to run an already trained model you can invoke the command 
+```
+python hackathon_example.py evaluate --input_file=butterfly_mini_dataset/test/test.csv  --export_dir=trained_model
+```
+This will essentialy load a model we have already trained so you can for example focus on feature visualization.
